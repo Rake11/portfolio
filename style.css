@@ -24,7 +24,7 @@ a{
     opacity: 0;
     animation: show-content 1.5s linear forwards;
     animation-delay: 1.2s;
-    background-color: rgba(124, 240, 61, 0.2);
+    background-color: rgba(124, 240, 61, 0.5);
 }
 @keyframes show-content{
     100%{
@@ -652,4 +652,141 @@ a{
     font-size: 22px;
     color: #7cf03d; /* Icon Color */
 }
+/* Updated CSS with modified media queries for About, Graduation Details, and Skills Category sections */
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.about img {
+    width: 45%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #7cf03d;
+}
+
+.graduation-details, .skills-category {
+    padding: 40px 20px;
+    background:#1f242d;
+    width: 80%;
+    margin: auto;
+}
+
+.graduation-details h2, .skills-category h2 {
+    font-size: 26px;
+    color: #7cf03d;
+    text-align: center;
+}
+
+.graduation-details p, .skills-category p {
+    font-size: 16px;
+    color: #050314;
+    text-align: center;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        width: 90%;
+    }
+    .graduation-details, .skills-category {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about img {
+        width: 80%;
+    }
+    .about-text h2 {
+        font-size: 24px;
+    }
+    .about-text p {
+        font-size: 14px;
+    }
+    .graduation-details, .skills-category {
+        width: 95%;
+        padding: 30px 15px;
+    }
+    .graduation-details h2, .skills-category h2 {
+        font-size: 22px;
+    }
+    .graduation-details p, .skills-category p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about img {
+        width: 100%;
+    }
+    .about-text {
+        width: 100%;
+    }
+    .about-text h2 {
+        font-size: 22px;
+    }
+    .about-text p {
+        font-size: 13px;
+    }
+    .graduation-details, .skills-category {
+        width: 100%;
+        padding: 25px 10px;
+    }
+    .graduation-details h2, .skills-category h2 {
+        font-size: 20px;
+    }
+    .graduation-details p, .skills-category p {
+        font-size: 12px;
+    }
+}
